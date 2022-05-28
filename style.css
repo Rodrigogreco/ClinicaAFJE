@@ -314,25 +314,21 @@ header {
     margin-top: 10px;
     margin-right: 40px;
     align-items: center;
-
+    
 }
 
-.l1 {
+.nav-right-section > .lm{
     margin-right: 35px;
-    list-style: none;
 }
 
-.l2 {
-    margin-right: 35px;
-    list-style: none;
+.nav-right-section > *:hover{
+    border-bottom: 1px solid rgb(48, 108, 112);
+}
+.nav-right-section > *{
+    transition-property: all;
+    transition-duration: 1s;
 }
 
-.l3{
-    margin-right: 35px;
-}
-.l4{
-    margin-right: 35px;
-}
 a {
     text-decoration: none;
     color: black;
