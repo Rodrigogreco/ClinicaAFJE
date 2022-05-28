@@ -234,37 +234,20 @@ header {
     display: flex;
     justify-content: center;
 }
-.box-uno {
-    
-    /* viene a dar suavidad y tiene dos valores obligatorios que hay que agregar para que funque, el primero es a que propiedad le doy transiy el 2DO  es cuanto tiempo dura esta transicion. se hace de dos maneras */
-    /* transition-property: si es all es para todo el elemento pero se puede hacer para alguna propiedad en particular;
-    transition-duration: cuanto va a durar, por ejemplo 2 segundos; */
-    /* transition-property: all;
-    transition-duration: 2s; */
-    /* si escribimos solo la propiedad transition y le agregamos la propiedad y la duracion y se aplica solo  */
 
+.p-obrassociales{
+    transition-property: all;
+    transition-duration: 2s;
 }
 .p-obrassociales:hover{
     /* cresca o escale 4 veces su tamaño */
     transform: scale(1.5);
-    transition-property: all;
-    transition: linear;
-    transition-duration: 2s;
+    
 }
-
-
-/* .section-obrassociales:{
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-   
-} */
 .img-obrassociales{
     margin-top: 20px;
     display: grid;
-    grid-template-rows: 450px ;
-    
-    
+    grid-template-rows: 450px ;  
 }
 .div-img{
     display: flex;
