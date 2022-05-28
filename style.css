@@ -1,0 +1,555 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+
+}
+
+header {
+    width: 100%;
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    letter-spacing:0.2em ;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+
+/* Empieza seccion Equipo */
+
+
+.img-section {
+    display: grid;
+    grid-template-rows: 350px ;
+    
+    grid-template-columns: 550px 225px;
+    
+    justify-content: center 
+}
+
+.img1 {
+    width: 225px;
+    height: 225px;
+    display: flex;
+    margin-top: 25px;
+    border-radius: 1000px;
+    
+}
+
+.img2 {
+    width: 225px;
+    height: 225px;
+    display: flex;
+    margin-top: 25px;
+    border-radius: 1000px;
+
+}
+
+.body-doctoras{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parrafo {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #c9c9c9;
+}
+.parrafo1 {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px;
+    
+}
+.img0{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 140px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.p-section{
+    display: grid;
+    grid-template-rows: 220px 20px;
+    height: 90px;
+    grid-template-columns: 700px 700px;
+    justify-content: center;
+
+    
+}
+
+.description-section {
+    margin: 0px 130px 185px 300px ;
+    font-size: 22px;
+    color: #6589c0
+}
+.especialidad-section{
+    display: flex;
+
+}
+.especialidad1{
+    margin-left: 280px;
+    letter-spacing: 0.1em;
+    
+}
+.cirujano{
+    margin-bottom: 15px;
+}
+.Traumatologia{
+    margin-bottom: 15px;
+}
+.especialidad2{
+    margin-left: 100px; 
+    letter-spacing: 0.1em;
+}
+.Ortodoncias{
+    margin-bottom: 15px;
+}
+.Endodoncias{
+    margin-bottom: 15px;
+}
+
+
+.description-section1{
+    margin: 0px 130px 185px 195px ;
+    font-size: 22px;
+    color: #6589c0
+}
+
+/* Fin Seccion Equipo */
+/* Empieza Seccion Especialidades */
+
+.img-especialidades{
+    display: grid;
+    margin-top: 80px;
+    width: 100%;
+    height: 250px;
+
+}
+.section-div1{
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-around;
+    
+}
+.Especialidad1{
+    background-color: rgb(244, 244, 244);
+    height: 400px;
+    width: 400px;
+    
+    
+}
+.especialidad1-1 {
+    height: 80px;
+    width: 400px;
+    background-color: violet;
+}
+.p-especialidad{
+    display: flex;
+    justify-content: center;
+    
+}
+.Especialidad2{
+    background-color: rgb(244, 244, 244);
+    height: 400px;
+    width: 400px;
+   
+}
+.especialidad2-2 {
+    height: 80px;
+    width: 400px;
+    background-color: violet;
+}
+.p-especialidad2{
+    display: flex;
+    justify-content: center;
+    
+}
+.section-div2{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.especialidad3{
+    background-color: rgb(244, 244, 244);
+    height: 400px;
+    width: 400px;
+}
+.especialidad3-3 {
+    height: 80px;
+    width: 400px;
+    background-color: violet;
+}
+.p-especialidad3{
+    display: flex;
+    justify-content: center;
+    
+}
+.especialidad4{
+    background-color: rgb(244, 244, 244);
+    height: 400px;
+    width: 400px;
+}
+
+.especialidad4-4 {
+    height: 80px;
+    width: 400px;
+    background-color: violet;
+}
+.p-especialidad4{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* Fin Seccion Especialidades */
+
+/* Inicio Seccion Obras Sociales */
+.box{
+    height: 80px;
+    width: 100px;
+    font-size: x-large;
+    border-radius: 6px;
+    /* lo mantiene centrado al div con lo de abajo */
+    margin: 50px auto; 
+}
+.box-uno {
+    
+    /* viene a dar suavidad y tiene dos valores obligatorios que hay que agregar para que funque, el primero es a que propiedad le doy transiy el 2DO  es cuanto tiempo dura esta transicion. se hace de dos maneras */
+    /* transition-property: si es all es para todo el elemento pero se puede hacer para alguna propiedad en particular;
+    transition-duration: cuanto va a durar, por ejemplo 2 segundos; */
+    transition-property: all;
+    transition-duration: 2s;
+    /* si escribimos solo la propiedad transition y le agregamos la propiedad y la duracion y se aplica solo  */
+
+}
+.box:hover{
+    /* cresca o escale 4 veces su tamaño */
+    transform: scale(1.5);
+}
+
+
+/* .section-obrassociales:{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+   
+} */
+.img-obrassociales{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 450px ;
+    
+    
+}
+.div-img{
+    display: flex;
+    justify-content: center;
+    
+}
+.div-img-ob1 {
+    border-radius: 800px;
+    width: 225px;
+    height: 225px;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 1000px;
+    
+
+    
+}
+.div-img-ob2{
+    border-radius: 800px;
+    width: 225px;
+    height: 225px;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 1000px;
+    background-color: white;
+    
+}
+.div-img-ob3{
+    border-radius: 800px;
+    width: 225px;
+    height: 225px;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 1000px;
+    
+}
+/* Fin Seccion Obras Sociales */
+
+/* Inicio Seccion Nosotros */
+.section-nosotros{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+
+}
+.descripcion-nosotros{
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: 500px;
+    
+    justify-content: center;
+}
+.div-nosotros{
+    
+    width: 600px;
+}
+
+
+/* Fin Seccion Nosotros */
+.nav-right-section {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 40px;
+    align-items: center;
+
+}
+
+.l1 {
+    margin-right: 35px;
+    list-style: none;
+}
+
+.l2 {
+    margin-right: 35px;
+    list-style: none;
+}
+
+.l3{
+    margin-right: 35px;
+}
+.l4{
+    margin-right: 35px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.img {
+
+    height: 130px;
+
+
+    border-radius: 10px;
+
+
+}
+
+
+/* body {
+    background-image: url('./Multimedia/Imagenes/consul\ 2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+main {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    padding: 16px;
+}
+
+main aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+
+    width: 350px;
+    background-color: rgb(10, 73, 82);
+    border-radius: 1vw;
+
+    padding: 16px
+}
+
+.aside-placeholder {
+    height: 200px;
+    background-color: #cccccc;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.p {
+    margin: 5% 10% 0% 30%;
+    font-size: 30px;
+    color: white;
+}
+
+.NC {
+    margin: 20% 5% 2% 20%;
+    background-repeat: no-repeat;
+    background-position: 90px center;
+    background-size: 20px;
+
+
+    width: 180px;
+    padding-left: 15px;
+    height: 30px;
+    border: 1px solid rgba(9, 113, 163, 1);
+    border-radius: 100px;
+}
+
+.NC:hover {
+    box-shadow: 0 10px 6px 0 #20212447;
+    border-color: #dfe1e500;
+
+}
+
+.OB {
+    margin: 5% 10% 2% 20%;
+
+    background-repeat: no-repeat;
+    background-position: 90px center;
+    background-size: 20px;
+
+
+    width: 180px;
+    padding-left: 15px;
+    height: 30px;
+    border: 1px solid rgba(9, 113, 163, 1);
+    border-radius: 100px;
+
+}
+
+.OB:hover {
+    box-shadow: 0 10px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+.DIA {
+    margin: 5% 10% 2% 20%;
+    background-repeat: no-repeat;
+    background-position: 90px center;
+    background-size: 20px;
+
+    width: 180px;
+    padding-left: 15px;
+    height: 30px;
+    border: 1px solid rgba(9, 113, 163, 1);
+    border-radius: 100px;
+    font-family: cursive;
+}
+
+.DIA:hover {
+    box-shadow: 0 10px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+.HORA {
+    margin: 5% 10% 2% 20%;
+    background-repeat: no-repeat;
+    background-position: 90px center;
+    background-size: 20px;
+
+    width: 180px;
+    padding-left: 15px;
+    height: 30px;
+    border: 1px solid rgba(9, 113, 163, 1);
+    border-radius: 100px;
+    font-family: cursive;
+}
+
+.HORA:hover {
+    box-shadow: 0 10px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+
+footer {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+
+}
+
+.face {
+
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+
+}
+
+.Link-facebook {
+    display: flex;
+    margin-left: 40px;
+
+    flex-wrap: wrap;
+}
+
+.insta {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.tw {
+    width: 20px;
+    height: 20px;
+
+}
+
+.p1 {
+    display: flex;
+
+    color: black;
+    list-style: none;
+
+    margin-bottom: 16px;
+
+}
+
+.p2 {
+
+    display: flex;
+
+    color: black;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
