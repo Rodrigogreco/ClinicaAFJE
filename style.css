@@ -227,40 +227,27 @@ header {
 /* Inicio Seccion Obras Sociales */
 .box{
     height: 80px;
-    width: 100px;
     font-size: x-large;
     border-radius: 6px;
     /* lo mantiene centrado al div con lo de abajo */
     margin: 50px auto; 
-}
-.box-uno {
-    
-    /* viene a dar suavidad y tiene dos valores obligatorios que hay que agregar para que funque, el primero es a que propiedad le doy transiy el 2DO  es cuanto tiempo dura esta transicion. se hace de dos maneras */
-    /* transition-property: si es all es para todo el elemento pero se puede hacer para alguna propiedad en particular;
-    transition-duration: cuanto va a durar, por ejemplo 2 segundos; */
-    transition-property: all;
-    transition-duration: 2s;
-    /* si escribimos solo la propiedad transition y le agregamos la propiedad y la duracion y se aplica solo  */
-
-}
-.box:hover{
-    /* cresca o escale 4 veces su tamaño */
-    transform: scale(1.5);
-}
-
-
-/* .section-obrassociales:{
     display: flex;
     justify-content: center;
-    font-size: x-large;
-   
-} */
+}
+
+.p-obrassociales{
+    transition-property: all;
+    transition-duration: 2s;
+}
+.p-obrassociales:hover{
+    /* cresca o escale 4 veces su tamaño */
+    transform: scale(1.5);
+    
+}
 .img-obrassociales{
     margin-top: 20px;
     display: grid;
-    grid-template-rows: 450px ;
-    
-    
+    grid-template-rows: 450px ;  
 }
 .div-img{
     display: flex;
