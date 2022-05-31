@@ -357,7 +357,11 @@ a {
     background-size: cover;
     background-attachment: fixed;
 } */
-
+.section-index{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
 main {
     display: flex;
     width: 100%;
@@ -382,9 +386,8 @@ main section {
 
 .formulario {
 
-    width: 350px;
-    background-color: rgb(10, 73, 82);
-    border-radius: 1vw;
+    width: 800px;
+    
 
     padding: 16px
 }
