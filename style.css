@@ -393,10 +393,13 @@ main section {
 }
 
 .aside-placeholder {
-    height: 200px;
-    background-color: #cccccc;
-    margin-bottom: 16px;
+    height: 500px;
+    background-color: red;
+    margin-bottom: 20px;
     width: 100%;
+}
+.card-body{
+    height: 255px;
 }
 
 
