@@ -26,6 +26,10 @@ header {
 
 
 /* Empieza seccion Equipo */
+.card{
+    max-width: 400px;
+    padding: 0;
+}
 
 
 .img-section {
@@ -33,7 +37,7 @@ header {
     grid-template-rows: 350px ;
     
     grid-template-columns: 550px 225px;
-    
+    border: 1px solid black;
     justify-content: center 
 }
 
@@ -154,13 +158,13 @@ header {
 .Especialidad1{
     background-color: rgb(244, 244, 244);
     height: 400px;
-    width: 400px;
+    width: 320px;
     
     
 }
 .especialidad1-1 {
     height: 80px;
-    width: 400px;
+    width: 320px;
     background-color: violet;
 }
 .p-especialidad{
@@ -171,12 +175,12 @@ header {
 .Especialidad2{
     background-color: rgb(244, 244, 244);
     height: 400px;
-    width: 400px;
+    width: 320px;
    
 }
 .especialidad2-2 {
     height: 80px;
-    width: 400px;
+    width: 320px;
     background-color: violet;
 }
 .p-especialidad2{
@@ -186,17 +190,17 @@ header {
 }
 .section-div2{
     display: flex;
-    margin-top: 100px;
+    margin-top: 1.5rem;
     justify-content: space-around;
 }
 .especialidad3{
     background-color: rgb(244, 244, 244);
     height: 400px;
-    width: 400px;
+    width: 320px;
 }
 .especialidad3-3 {
     height: 80px;
-    width: 400px;
+    width: 320px;
     background-color: violet;
 }
 .p-especialidad3{
@@ -207,12 +211,12 @@ header {
 .especialidad4{
     background-color: rgb(244, 244, 244);
     height: 400px;
-    width: 400px;
+    width: 320px;
 }
 
 .especialidad4-4 {
     height: 80px;
-    width: 400px;
+    width: 320px;
     background-color: violet;
 }
 .p-especialidad4{
@@ -302,27 +306,39 @@ header {
 }
 .div-nosotros{
     
-    width: 600px;
+    max-width: 600px;
 }
 
 
 /* Fin Seccion Nosotros */
+
+/* Inicio Parametros Header */
+.barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+}
 .nav-right-section {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     list-style: none;
     margin-top: 10px;
     margin-right: 40px;
     align-items: center;
+    width: 100%;
     
+}
+.nav-right-section li{
+    display: flex;
 }
 
-.nav-right-section > .lm{
+/* .nav-right-section > .lm{
     margin-right: 35px;
     
-}
+} */
 .lm1{
-    margin-left: 35px;
+    
     border-radius: 60px;
     background-color: #6487c2;
     font-size: small;
@@ -341,27 +357,25 @@ a {
 }
 
 .img {
-
     height: 130px;
-
-
     border-radius: 10px;
-
-
 }
+/* Fin Parametros Header */
 
+/* Inicio Seccion Bienvenidos a Clinica */
 
-/* body {
-    background-image: url('./Multimedia/Imagenes/consul\ 2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-} */
 .section-index{
     display: flex;
     justify-content: center;
     font-size: x-large;
 }
+.bienvenidos{
+    /* Sirve para que se agrande o achique la letra segun la pantalla que tenemos, es bien responsive. */
+    font-size: clamp(12px, 3vw, 20px);
+}
+/* Fin Seccion Bienvenidos a Clinica */
+
+/* Inicio seccion parametros del main */
 main {
     display: flex;
     width: 100%;
@@ -370,33 +384,29 @@ main {
     padding: 16px;
 }
 
-main aside {
-    width: 30%;
+.main-section {
     display: flex;
-    flex-direction: column;
-
-}
-
-main section {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
     align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.carousel {
+.carousel-container {
+    border: 1px solid black;
+    width: 60%;
+    display: flex;
+    justify-content: center;
 
-    width: 800px;
-    
-
-    padding: 16px
 }
 
 .aside-placeholder {
     height: 500px;
     background-color: red;
-    margin-bottom: 20px;
-    width: 100%;
+    width: 400px;
+    margin-left: 15px;
 }
 .card-body{
     height: 255px;
@@ -467,3 +477,35 @@ ul {
     list-style: none;
     padding: 0;
 }
+
+/* Medias Queris */
+@media (max-width: 1050px) {
+    .nav-right-section li a{
+        font-size: 10px;
+    }
+    .barra-navegacion{
+        width: 90%;
+    }
+    
+}
+@media (max-width: 715px){
+    .nav-right-section{
+        flex-direction: column;
+        
+    }
+    .nav-right-section li{
+        width: 100%;
+    }
+    .nav-right-section li a{
+        width: 100%;
+        text-align: right;
+    }
+    .carousel-container{
+        width: 100%;
+    }
+    .aside-placeholder{
+        width: 100%;
+    }
+
+}
+

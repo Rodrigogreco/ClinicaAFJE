@@ -19,11 +19,11 @@
 
         <img class="img" src="./Multimedia/Imagenes/Logo2.jpg" alt="">
       
-        <nav>
+        <nav class="barra-navegacion">
             
             <ul class="nav-right-section">
                 <li class="lm">
-                    <a  href="./index.html">Inicio</a>
+                    <a  href="">Inicio</a>
                 </li>
                 <li class="lm">
                     <a href="./Equipo.html">Equipo</a>
@@ -37,9 +37,10 @@
                 <li class="l5">
                     <a href="./Nosotros.html">Nosotros</a>
                 </li>
-                <button type="button" class="btn btn-lg btn-danger lm1" data-bs-toggle="popover" title="Proximamente podras reservar tu turno!!" data-bs-content="Proximamente podras reservar tu turno!!">Reservas</button>
+                
               
             </ul>
+            <button type="button" class="btn btn-lg btn-danger lm1 " data-bs-toggle="popover" title="Proximamente podras reservar tu turno!!" data-bs-content="Proximamente podras reservar tu turno!!"> <b>RESERVAS</b> </button>
             
         </nav>
       
@@ -53,27 +54,66 @@
         <p class="parrafo"> <b>Equipo Clinica AFJS</b> </p>
         <p class="parrafo1"> <b>Nuestros especialistas al cuidado de tu salud</b> </p>
     </section>
-    <section class="img-section">
-        <img class="img1" src="./Multimedia/Imagenes/Doctora1.jfif" alt="Doctora AF">
-        <img class="img2" src="./Multimedia/Imagenes/Doctora2.jfif" alt="Doctora JE">
-    </section>
-    <SEction class="p-section">
-        <p class="description-section"> <b>Dra Agustina Fernandez</b></p>
-        <p class="description-section1"> <b>Dra Juliana Espin</b> 
-        </p>
-    </SEction>
-    <section class="especialidad-section">
-        <div class="especialidad1">
-            <p class="cirujano"> <b>Cirujano Maxilofacial</b> </p>
-            <p class="Traumatologia"> <b>Especialista en Cirugía y Traumatología Bucomaxilofacial.</b> </p>
-            <p> <b>Expositor en congresos nacionales e internacionales.</b> </p>
+
+    <section class="container section-card">
+        <div class="row justify-content-evenly gap-4 ">
+
+            <div class="card col-md-6 col-12 " >
+                <img src="./Multimedia/Imagenes/Doctora2.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title my-4"><b>Dra Juliana Espin</b></h5>
+                  <ul class="card-text d-flex flex-column gap-2">
+                    <li><b>Cirujano Maxilofacial</b></li>
+                    <li><b>Especialista en Cirugía y Traumatología Bucomaxilofacial.</b></li>
+                    <li><b>Expositor en congresos nacionales e internacionales.</b></li>
+    
+                </ul>
+                  
+                </div>
+              </div>
+              <div class="card col-md-6 col-12 " >
+                <img src="./Multimedia/Imagenes/Doctora1.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title my-4"><b>Dra Agustina Fernandez</b></h5>
+                  <ul class="card-text d-flex flex-column gap-2">
+                      <li><b>Cirujano Maxilofacial</b></li>
+                      <li><b>Especialista en Cirugía y Traumatología Bucomaxilofacial.</b></li>
+                      <li><b>Expositor en congresos nacionales e internacionales.</b></li>
+    
+                  </ul>
+                  
+                </div>
+              </div>
+
         </div>
-        <div class="especialidad2">
-            <p class="Ortodoncias"> <b>Ortononcista</b> </p>
-            <p class="Endodoncias"> <b>Endodoncista</b> </p>
-            <p> <b>Expositor en congresos nacionales e internacionales.</b> </p>
-        </div>
+
+        
+        <!-- <section class="img-section">
+            <img class="img1" src="./Multimedia/Imagenes/Doctora1.jfif" alt="Doctora AF">
+            <img class="img2" src="./Multimedia/Imagenes/Doctora2.jfif" alt="Doctora JE">
+        </section>
+    
+        <SEction class="p-section">
+            <p class="description-section"> <b>Dra Agustina Fernandez</b></p>
+            <p class="description-section1"> <b>Dra Juliana Espin</b> 
+            </p>
+        </SEction>
+
+        <section class="especialidad-section">
+            <div class="especialidad1">
+                <p class="cirujano"> <b>Cirujano Maxilofacial</b> </p>
+                <p class="Traumatologia"> <b>Especialista en Cirugía y Traumatología Bucomaxilofacial.</b> </p>
+                <p> <b>Expositor en congresos nacionales e internacionales.</b> </p>
+            </div>
+            <div class="especialidad2">
+                <p class="Ortodoncias"> <b>Ortononcista</b> </p>
+                <p class="Endodoncias"> <b>Endodoncista</b> </p>
+                <p> <b>Expositor en congresos nacionales e internacionales.</b> </p>
+            </div>
+        </section> -->
+
     </section>
+    
 
 
     <footer>
